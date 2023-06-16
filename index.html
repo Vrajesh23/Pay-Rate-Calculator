@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+     <!-- Author: Vrajesh Thaker -->
+     <!--Craeted for educational use.-->
+  <!-- This is a Pay Rate Calculator application -->
+<head>
+  <title>Pay Rate Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Pay Rate Calculator</h1>
+    </header>
+    <main>
+      <form id="payRateForm">
+        <div class="form-container">
+          <label for="payRate">Hourly Pay Rate:</label>
+          <input type="number" id="payRate" step="0.01" placeholder="Enter pay rate" required>
+          <label for="hoursWorked">Hours Worked in a Week:</label>
+          <input type="number" id="hoursWorked" step="0.01" placeholder="Enter hours worked in a week" required>
+          <label for="taxRate">Tax Rate:</label>
+          <input type="number" id="taxRate" step="0.01" placeholder="Enter tax rate in %" required>
+          <button type="submit">Calculate</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+      <div id="result" class="result"></div>
+    </main>
+    <footer>
+      <p id="hoursWorkedText">&copy; Pay Rate Calculator by  <a href="https://www.linkedin.com/in/vrajesh-thaker-1886731bb/">Vrajesh</a></p>
+    </footer>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
